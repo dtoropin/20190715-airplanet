@@ -4,4 +4,4 @@
 
 Наставник: Сысоева Анна
 
-url: 
+url: https://dtoropin.github.io/20190715-airplanet/
