@@ -16,34 +16,35 @@
 		padding: 5px 0 5px 40px;
 		background: no-repeat center left;
 		line-height: 1.6;
+		.iconsheet;
 		
 		&:hover {
 			color: #000;
 		}
 	
 		&--plane {
-			background-image: url(../image/plane_icon.png);
+			.icon(-10px, -174px);
 		}
 		&--star {
-			background-image: url(../image/star_icon.png);
+			.icon(-10px, -318px);
 		}
 		&--cap {
-			background-image: url(../image/cap_icon.png);
+			.icon(-10px, -7px);
 		}
 	}
 }
 
 .menu__item.active > .menu__link--plane,
 .menu__link--plane:hover {
-	background-image: url(../image/plane_icon_hover.png);
+	.icon(-10px, -280px);
 }
 
 .menu__item.active > .menu__link--star,
 .menu__link--star:hover {
-	background-image: url(../image/star_icon_hover.png);
+	.icon(-10px, -356px);
 }
 
 .menu__item.active > .menu__link--cap,
 .menu__link--cap:hover {
-	background-image: url(../image/cap_icon_hover.png);
+	.icon(-10px, -45px);
 }

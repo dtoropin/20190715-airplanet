@@ -64,10 +64,10 @@
 						<ul class="review">
 							<li class="review__item">
 								<div class="review__img">
-									<img src="image/comment1.jpg" alt="avatar">
+									<img src="image/comment1.jpg" alt="Ирина">
 								</div>
 								<div class="review__block">
-									<div class="review__date">12.10.2016</div>
+									<time datetime="2016-10-12" class="review__date">12.10.2016</time>
 									<h3 class="review__title">Ирина Паламарчук</h3>
 									<p class="review__text">
 										Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу, ничего не
@@ -79,10 +79,10 @@
 
 							<li class="review__item">
 								<div class="review__img">
-									<img src="image/comment2.jpg" alt="avatar">
+									<img src="image/comment2.jpg" alt="Александр">
 								</div>
 								<div class="review__block">
-									<div class="review__date">01.02.2016</div>
+									<time datetime="2016-02-01" class="review__date">01.02.2016</time>
 									<h3 class="review__title">Александр Бельков</h3>
 									<p class="review__text">
 										Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза, а еду – 1 раз.
@@ -95,7 +95,7 @@
 							<li class="review__item">
 								<div class="review__img"></div>
 								<div class="review__block">
-									<div class="review__date">22.12.2015</div>
+									<time datetime="2015-12-22" class="review__date">22.12.2015</time>
 									<h3 class="review__title">Игорь Николаенко</h3>
 									<p class="review__text">
 										Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но прибавьте к этому
@@ -107,10 +107,10 @@
 
 							<li class="review__item">
 								<div class="review__img">
-									<img src="image/comment3.jpg" alt="avatar">
+									<img src="image/comment3.jpg" alt="Анастасия">
 								</div>
 								<div class="review__block">
-									<div class="review__date">14.08.2015</div>
+									<time datetime="2015-08-14" class="review__date">14.08.2015</time>
 									<h3 class="review__title">Анастасия Порядная</h3>
 									<p class="review__text">
 										За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за аналогичные рейсы. Мне
@@ -158,7 +158,7 @@
 				<h2 class="section-title section-title--form">Оставить отзыв</h2>
 
 				<form class="feedback-form">
-					<div class="feedback-form__top">
+					<div class="feedback-form__row">
 						<label class="feedback-form__item">
 							<span class="feedback-form__head">Ваше имя</span>
 							<input type="text" name="username" class="feedback-form__input" required placeholder="Андрей">
@@ -168,15 +168,17 @@
 							<span class="feedback-form__head">Ссылка на профиль VK</span>
 							<input type="text" name="userurl" class="feedback-form__input" required placeholder="vk.com/example">
 						</label>
-					</div><!-- .feedback-form__top -->
+					</div><!-- .feedback-form__row -->
 
-					<label class="feedback-form__item">
-						<span class="feedback-form__head">Текст отзыва</span>
-						<textarea name="usertext" class="feedback-form__input feedback-form__input--textarea" required
-							placeholder="Мне понравилось"></textarea>
-					</label>
+					<div class="feedback-form__row">
+						<label class="feedback-form__item">
+							<span class="feedback-form__head">Текст отзыва</span>
+							<textarea name="usertext" class="feedback-form__input feedback-form__input--textarea" required
+								placeholder="Мне понравилось"></textarea>
+						</label>
+					</div><!-- .feedback-form__row -->
 
-					<div class="feedback-form__bottom">
+					<div class="feedback-form__row">
 						<div class="feedback-form__item">
 							<span class="feedback-form__head">Отображать фото в отзыве?</span>
 
@@ -199,8 +201,10 @@
 							</div><!-- .feedback-form__radio-block -->
 						</div><!-- .feedback-form__item -->
 
-						<button type="submit" class="feedback-form__btn">Отправить</button>
-					</div><!-- .feedback-form__bottom -->
+						<div class="feedback-form__buttons">
+							<button type="submit" class="feedback-form__btn">Отправить</button>
+						</div><!-- .feedback-form__buttons -->
+					</div><!-- .feedback-form__row -->
 				</form>
 			</div><!-- .container-form -->
 		</section><!-- .feedback -->

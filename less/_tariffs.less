@@ -1,5 +1,4 @@
 .tariffs {
-
 	& > .section-title {
 		margin-bottom: 25px;
 	}
@@ -11,12 +10,8 @@
 
 	&__item {
 		margin-bottom: 35px;
-	}
-
-	&__link {
-		display: block;
 		box-sizing: border-box;
-		width: 250px;
+		max-width: 250px;
 		padding: 45px 25px;
 		border: 1px solid transparent;
 
@@ -32,16 +27,10 @@
 		border-radius: 50%;
 		margin: 0 auto;
 		margin-bottom: 35px;
-	
-		&--flower {
-			background: url(../image/flower.png) no-repeat center, #4b73b5;
-		}
-		&--star {
-			background: url(../image/star.png) no-repeat center, #4b73b5;
-		}
-		&--palette {
-			background: url(../image/palette.png) no-repeat center, #4b73b5;
-		}
+		background: #4b73b5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__head {
