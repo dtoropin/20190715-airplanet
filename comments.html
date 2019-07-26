@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" type="image/png" href="image/favicon.png">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Airlpanet</title>
 </head>
 
@@ -29,128 +29,137 @@
 			</div><!-- .container -->
 		</header>
 
-		<div class="center">
-			<div class="container">
-				<aside class="sidebar">
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="main.html" class="menu__link menu__link--plane">Главная</a>
-							</li>
-							<li class="menu__item active">
-								<a href="comments.html" class="menu__link menu__link--star">Отзывы</a>
-							</li>
-							<li class="menu__item">
-								<a href="team.html" class="menu__link menu__link--cap">Экипаж</a>
-							</li>
-						</ul>
-					</nav>
-				</aside>
+		<div class="container">
+			<aside class="sidebar">
+				<div class="sentence">
+					<p class="sentence__text">
+						Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить
+						<a href="#" class="sentence__link sentence__link--site">заявку на сайте</a>
+						или же позвонить по номеру круглосуточной поддержки
+						<a href="tel:+78000039210" class="sentence__link">8 (800) 00-392-10</a>.
+					</p>
+				</div><!-- .sentence -->
 
-				<main class="content">
-					<ul class="breadcrumbs">
-						<li class="breadcrumbs__item">
-							<a href="main.html" class="breadcrumbs__link">Главная</a>
+				<div class="social">
+					<h3 class="social__title">Наши социальные сети</h3>
+
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="#" class="social__link social__link--vk"></a>
 						</li>
-						<li class="breadcrumbs__item">
-							<span class="breadcrumbs__current">Отзывы</span>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--fb"></a>
 						</li>
-					</ul><!-- .breadcrumbs -->
+						<li class="social__item">
+							<a href="#" class="social__link social__link--gplus"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--tw"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--email"></a>
+						</li>
+					</ul>
+				</div><!-- .social -->
+			</aside>
 
-					<section class="comments">
-						<h1 class="section-title">Отзывы</h1>
+			<main class="content">
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="main.html" class="menu__link menu__link--plane">Главная</a>
+						</li>
+						<li class="menu__item active">
+							<a href="comments.html" class="menu__link menu__link--star">Отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a href="team.html" class="menu__link menu__link--cap">Экипаж</a>
+						</li>
+					</ul>
+				</nav>
 
-						<ul class="review">
-							<li class="review__item">
-								<div class="review__img">
-									<img src="image/comment1.jpg" alt="Ирина">
-								</div>
-								<div class="review__block">
-									<time datetime="2016-10-12" class="review__date">12.10.2016</time>
-									<h3 class="review__title">Ирина Паламарчук</h3>
-									<p class="review__text">
-										Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу, ничего не
-										случилось, но мне даже валерьянка не помогла, так страшно было. Рекомендую эту компанию, но лучше
-										доплатить и лететь с комфортом.
-									</p>
-								</div><!-- .review__block -->
-							</li>
+				<section class="comments">
+					<h1 class="section-title">Отзывы</h1>
 
-							<li class="review__item">
-								<div class="review__img">
-									<img src="image/comment2.jpg" alt="Александр">
-								</div>
-								<div class="review__block">
-									<time datetime="2016-02-01" class="review__date">01.02.2016</time>
-									<h3 class="review__title">Александр Бельков</h3>
-									<p class="review__text">
-										Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза, а еду – 1 раз.
-										Единственное, что не понравилось, как то мало места для ног, но с этим у меня часто проблема, рост
-										2,1м.
-									</p>
-								</div><!-- .review__block -->
-							</li>
+					<ul class="review">
+						<li class="review__item">
+							<div class="review__img">
+								<img src="image/comment1.jpg" alt="Ирина">
+							</div>
+							<div class="review__block">
+								<time datetime="2016-10-12" class="review__date">12.10.2016</time>
+								<h3 class="review__title">Ирина Паламарчук</h3>
+								<p class="review__text">
+									Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу, ничего не
+									случилось, но мне даже валерьянка не помогла, так страшно было. Рекомендую эту компанию, но лучше
+									доплатить и лететь с комфортом.
+								</p>
+							</div><!-- .review__block -->
+						</li>
 
-							<li class="review__item">
-								<div class="review__img"></div>
-								<div class="review__block">
-									<time datetime="2015-12-22" class="review__date">22.12.2015</time>
-									<h3 class="review__title">Игорь Николаенко</h3>
-									<p class="review__text">
-										Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но прибавьте к этому
-										время регистрации в аэропорту. Летел с женой и мы очень проголодались. Просто имейте это ввиду,
-										берите с собой хотя бы бутерброды, чипсы какие-то или печенье.
-									</p>
-								</div><!-- .review__block -->
-							</li>
+						<li class="review__item">
+							<div class="review__img">
+								<img src="image/comment2.jpg" alt="Александр">
+							</div>
+							<div class="review__block">
+								<time datetime="2016-02-01" class="review__date">01.02.2016</time>
+								<h3 class="review__title">Александр Бельков</h3>
+								<p class="review__text">
+									Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза, а еду – 1 раз.
+									Единственное, что не понравилось, как то мало места для ног, но с этим у меня часто проблема, рост
+									2,1м.
+								</p>
+							</div><!-- .review__block -->
+						</li>
 
-							<li class="review__item">
-								<div class="review__img">
-									<img src="image/comment3.jpg" alt="Анастасия">
-								</div>
-								<div class="review__block">
-									<time datetime="2015-08-14" class="review__date">14.08.2015</time>
-									<h3 class="review__title">Анастасия Порядная</h3>
-									<p class="review__text">
-										За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за аналогичные рейсы. Мне
-										понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую на пыль. Спасибо за полет!
-										Рекомендую!
-									</p>
-								</div><!-- .review__block -->
-							</li>
-						</ul><!-- .review -->
+						<li class="review__item">
+							<div class="review__img"></div>
+							<div class="review__block">
+								<time datetime="2015-12-22" class="review__date">22.12.2015</time>
+								<h3 class="review__title">Игорь Николаенко</h3>
+								<p class="review__text">
+									Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но прибавьте к этому
+									время регистрации в аэропорту. Летел с женой и мы очень проголодались. Просто имейте это ввиду,
+									берите с собой хотя бы бутерброды, чипсы какие-то или печенье.
+								</p>
+							</div><!-- .review__block -->
+						</li>
 
-						<div class="pagination">
-							<span class="pagination__text">Страница 1 из 7</span>
-							<div class="pagination__navbar">
-								<a href="#" class="pagination__control disabled">&lsaquo;</a>
-								<ul class="pagination__list">
-									<li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
-									<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-									<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-									<li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
-									<li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
-									<li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
-									<li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
-								</ul>
-								<a href="#" class="pagination__control">&rsaquo;</a>
-							</div><!-- .pagination__navbar -->
-						</div><!-- .pagination -->
-					</section><!-- .comments -->
-				</main>
-			</div><!-- .container -->
-		</div><!-- .center -->
+						<li class="review__item">
+							<div class="review__img">
+								<img src="image/comment3.jpg" alt="Анастасия">
+							</div>
+							<div class="review__block">
+								<time datetime="2015-08-14" class="review__date">14.08.2015</time>
+								<h3 class="review__title">Анастасия Порядная</h3>
+								<p class="review__text">
+									За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за аналогичные рейсы. Мне
+									понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую на пыль. Спасибо за полет!
+									Рекомендую!
+								</p>
+							</div><!-- .review__block -->
+						</li>
+					</ul><!-- .review -->
 
-		<div class="sentence">
-			<div class="sentence__container">
-				<p class="sentence__text">
-					Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить
-					<a href="#" class="sentence__link sentence__link--site">заявку на сайте</a>
-					или же позвонить по номеру круглосуточной поддержки
-					<a href="tel:+78000039210" class="sentence__link">8 (800) 00-392-10</a>.
-				</p>
-			</div><!-- .container -->
-		</div><!-- .sentence -->
+					<div class="pagination">
+						<span class="pagination__text">Страница 1 из 7</span>
+						<div class="pagination__navbar">
+							<a href="#" class="pagination__control disabled">&lsaquo;</a>
+							<ul class="pagination__list">
+								<li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
+								<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+								<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+								<li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+								<li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+								<li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+								<li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
+							</ul>
+							<a href="#" class="pagination__control">&rsaquo;</a>
+						</div><!-- .pagination__navbar -->
+					</div><!-- .pagination -->
+				</section><!-- .comments -->
+			</main>
+		</div><!-- .container -->
 
 		<section class="feedback">
 			<div class="container-form">
@@ -223,28 +232,6 @@
 				<a href="main.html" class="logo">
 					<img src="image/logo.png" alt="Airplanet" class="logo__img">
 				</a>
-
-				<div class="social">
-					<h3 class="social__title">Наши социальные сети</h3>
-
-					<ul class="social__list">
-						<li class="social__item">
-							<a href="#" class="social__link social__link--vk"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--fb"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--gplus"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--tw"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--email"></a>
-						</li>
-					</ul>
-				</div><!-- .social -->
 			</div><!-- .container -->
 		</footer>
 	</div><!-- .wrapper -->

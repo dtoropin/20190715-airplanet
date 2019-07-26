@@ -1,10 +1,20 @@
 .menu {
+	margin-bottom: 10px;
+	
+	&__list {
+		display: flex;
+	}
+
 	&__item {
 		color: #4b73b5;
 		font-size: 0.8571em;
 		font-weight: 700;
 		text-transform: uppercase;
-		margin-bottom: 30px;
+		margin-left: 95px;
+
+		&:first-child {
+			margin-left: 0;
+		}
 
 		&.active  > .menu__link {
 			color: #000;

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" type="image/png" href="image/favicon.png">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Airlpanet</title>
 </head>
 
@@ -20,17 +20,61 @@
 
 				<address class="contacts">
 					<a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
-					<span class="contacts__timework">График работы</span>
-					<div class="contacts__popup">
-						<div class="contacts__popup-days">пн-вс: 09:00-20:00</div>
-						<div class="contacts__popup-dinner">обед: 14:00-14:30</div>
-					</div><!-- .contacts__popup -->
+					<div class="contacts__timework">
+						<a href="javascript:void(0);" class="contacts__link">График работы</a>
+						<div class="contacts__popup">
+							<div class="contacts__popup-block">
+								<div class="contacts__popup-days">пн-вс: 09:00-20:00</div>
+								<div class="contacts__popup-dinner">обед: 14:00-14:30</div>
+							</div><!-- .contacts__popup-block -->
+						</div><!-- .contacts__popup -->
+					</div><!-- .contacts__timework -->
 				</address><!-- .contacts -->
 			</div><!-- .container -->
 		</header>
 
 		<div class="container">
-			<aside class="sidebar sidebar--main">
+			<aside class="sidebar">
+				<div class="tariffs">
+					<h3 class="aside-title">Топ-тариф</h3>
+					<h4 class="tariffs__head">стандарт</h4>
+					<p class="tariffs__subs">
+						Создан для вашего комфортного отдыха
+					</p>
+					<ul class="tariffs__sublist">
+						<li class="tariffs__plus">Питание включено</li>
+						<li class="tariffs__plus">Багаж (5 кг)</li>
+						<li class="tariffs__plus">Детское кресло</li>
+					</ul>
+					<div class="tariffs__price">$
+						<span class="tariffs__number">19</span>
+					</div>
+				</div>
+
+				<div class="social">
+					<h3 class="social__title">Наши социальные сети</h3>
+
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="#" class="social__link social__link--vk"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--fb"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--gplus"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--tw"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--email"></a>
+						</li>
+					</ul>
+				</div><!-- .social -->
+			</aside>
+
+			<main class="content">
 				<nav class="menu">
 					<ul class="menu__list">
 						<li class="menu__item active">
@@ -44,75 +88,13 @@
 						</li>
 					</ul>
 				</nav>
-			</aside>
 
-			<main class="content content--main">
 				<div class="banner"></div>
-
-				<section class="tariffs">
-					<h1 class="section-title">Тарифы</h1>
-
-					<ul class="tariffs__list">
-						<li class="tariffs__item">
-							<div class="tariffs__img">
-								<img src="image/flower.png" alt="flower">
-							</div>
-							<h3 class="tariffs__head">стандарт</h3>
-							<p class="tariffs__subs">
-								Создан для вашего комфортного отдыха
-							</p>
-							<ul class="tariffs__sublist">
-								<li class="tariffs__plus">Питание включено</li>
-								<li class="tariffs__plus">Багаж (5 кг)</li>
-								<li class="tariffs__plus">Детское кресло</li>
-							</ul>
-							<div class="tariffs__price">$
-								<span class="tariffs__number">19</span>
-							</div>
-						</li>
-
-						<li class="tariffs__item">
-							<div class="tariffs__img">
-								<img src="image/star.png" alt="star">
-							</div>
-							<h3 class="tariffs__head">премиум</h3>
-							<p class="tariffs__subs">
-								Для любителей хороших впечатлений
-							</p>
-							<ul class="tariffs__sublist">
-								<li class="tariffs__plus">Питание включено</li>
-								<li class="tariffs__plus">Багаж (5 кг)</li>
-								<li class="tariffs__plus">Детское кресло</li>
-							</ul>
-							<div class="tariffs__price">$
-								<span class="tariffs__number">39</span>
-							</div>
-						</li>
-
-						<li class="tariffs__item">
-							<div class="tariffs__img">
-								<img src="image/palette.png" alt="palette">
-							</div>
-							<h3 class="tariffs__head">лакшери</h3>
-							<p class="tariffs__subs">
-								Всё самое лучшее и незабываемое
-							</p>
-							<ul class="tariffs__sublist">
-								<li class="tariffs__plus">Питание включено</li>
-								<li class="tariffs__plus">Багаж (5 кг)</li>
-								<li class="tariffs__plus">Детское кресло</li>
-							</ul>
-							<div class="tariffs__price">$
-								<span class="tariffs__number">99</span>
-							</div>
-						</li>
-					</ul><!-- .tariffs__list -->
-				</section><!-- .tariffs -->
 
 				<section class="news">
 					<h2 class="section-title">Последние новости</h2>
 
-					<ul class="review">
+					<ul class="review review--main">
 						<li class="review__item">
 							<div class="review__img">
 								<img src="image/news1.jpg" alt="avatar">
@@ -194,28 +176,6 @@
 				<span class="logo">
 					<img src="image/logo.png" alt="Airplanet" class="logo__img">
 				</span>
-
-				<div class="social">
-					<h3 class="social__title">Наши социальные сети</h3>
-
-					<ul class="social__list">
-						<li class="social__item">
-							<a href="#" class="social__link social__link--vk"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--fb"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--gplus"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--tw"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--email"></a>
-						</li>
-					</ul>
-				</div><!-- .social -->
 			</div><!-- .container -->
 		</footer>
 	</div><!-- .wrapper -->
