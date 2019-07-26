@@ -829,6 +829,8 @@ body {
   height: 18px;
   border-radius: 50%;
   border: 1px solid #c9c9c9;
+  -webkit-transition: 0.3s border-color ease;
+  transition: 0.3s border-color ease;
 }
 .feedback-form__radio-custom > .feedback-form__radio-center {
   position: absolute;
@@ -838,6 +840,8 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
+  -webkit-transition: 0.3s background-color ease;
+  transition: 0.3s background-color ease;
 }
 .feedback-form__btn {
   padding: 16px 46px 16px 22px;
