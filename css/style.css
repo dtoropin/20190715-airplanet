@@ -221,14 +221,15 @@ body {
 .footer {
   background-color: #4b73b5;
   color: #fff;
-}
-.header,
-.footer {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 .header {
   margin-bottom: 26px;
+}
+.logo:not(.logo--main):hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .sidebar {
   width: 23.45%;
@@ -377,12 +378,17 @@ body {
   font-weight: 700;
   display: block;
   margin-bottom: 5px;
+  -webkit-transition: .3s color ease;
+  transition: .3s color ease;
+}
+.contacts__phone:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 .contacts__link {
   color: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-  -webkit-transition: .2s all linear;
-  transition: .2s all linear;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease;
 }
 .contacts__timework {
   position: relative;
