@@ -23,38 +23,74 @@
 	}
 
 	&__link {
+		position: relative;
 		padding: 5px 0 5px 40px;
 		background: no-repeat center left;
 		line-height: 1.6;
-		.iconsheet;
+		transition: .3s all ease;
+
+		&::after,
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			content: '';
+			display: block;
+			transform: translateY(-60%);
+			width: 23px;
+			height: 23px;
+			.iconsheet;
+			transition: .3s opacity ease;
+		}
 		
 		&:hover {
 			color: #000;
 		}
 	
 		&--plane {
-			.icon(-10px, -174px);
+			&::before {
+				.icon(-10px, -241px);
+			}
+			&::after {
+				opacity: 0;
+				.icon(-10px, -347px);
+			}
 		}
 		&--star {
-			.icon(-10px, -318px);
+			&::before {
+				.icon(-10px, -386px);
+			}
+			&::after {
+				opacity: 0;
+				.icon(-10px, -424px);
+			}
 		}
 		&--cap {
-			.icon(-10px, -7px);
+			&::before {
+				.icon(-10px, -7px);
+			}
+			&::after {
+				opacity: 0;
+				.icon(-10px, -45px);
+			}
 		}
 	}
 }
 
-.menu__item.active > .menu__link--plane,
-.menu__link--plane:hover {
-	.icon(-10px, -280px);
+.menu__item.active > .menu__link--plane::after,
+.menu__link--plane:hover::after,
+.menu__item.active > .menu__link--star::after,
+.menu__link--star:hover::after,
+.menu__item.active > .menu__link--cap::after,
+.menu__link--cap:hover::after {
+	opacity: 1;
 }
 
-.menu__item.active > .menu__link--star,
-.menu__link--star:hover {
-	.icon(-10px, -356px);
-}
-
-.menu__item.active > .menu__link--cap,
-.menu__link--cap:hover {
-	.icon(-10px, -45px);
+.menu__item.active > .menu__link--plane::before,
+.menu__link--plane:hover::before,
+.menu__item.active > .menu__link--star::before,
+.menu__link--star:hover::before,
+.menu__item.active > .menu__link--cap::before,
+.menu__link--cap:hover::before {
+	opacity: 0;
 }
